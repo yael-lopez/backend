@@ -1,1 +1,21 @@
-composer
+{
+    "name": "yael4/local",
+    "description": "Proyecto personal backend angular",
+    "type": "project",
+    "authors": [
+        {
+            "name": "yael-lopez",
+            "email": "yael44gr@gmail.com"
+        },
+        {
+            "name": "xochitl-beltran",
+            "email": "xochitl-beltran@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+        }
+    }
+}
