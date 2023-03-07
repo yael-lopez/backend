@@ -1,10 +1,10 @@
 <?php
 
     $db = mysqli_connect(
-        'localhost',
-        'root', 
-        '', 
-        'users'
+        'us-cdbr-east-06.cleardb.net',
+        'baf11fc9b43d4a', 
+        '60940b6b', 
+        'heroku_68efbcacd414720'
     );
     $db->set_charset("utf8");
 
