@@ -2,9 +2,9 @@
 
     $db = mysqli_connect(
         'us-cdbr-east-06.cleardb.net',
-        'baf11fc9b43d4a', 
-        '60940b6b', 
-        'heroku_68efbcacd414720'
+        'b20a5256f8e8ea', 
+        'ebc93042', 
+        'heroku_ddd085a40e59998'
     );
     $db->set_charset("utf8");
 
