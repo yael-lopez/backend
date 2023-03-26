@@ -8,14 +8,14 @@
 	$jsonUser = json_decode(file_get_contents("php://input"));
 
 
-	$nombre= $jsonUser->nombre;
+	/*$nombre= $jsonUser->nombre;
 	$inicio= $jsonUser->inicio;
 	$fin= $jsonUser->fin;
 	$horas= $jsonUser->horas;
-	$costo = $jsonUser->costo;
+	$costo = $jsonUser->costo;*/
 
 	$json = [
-		"nombre" => $nombre
+		"nombre" => json_decode(file_get_contents("php://input"))
 	];
 
 	/*require 'database.php';
