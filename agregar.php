@@ -8,7 +8,7 @@
 	$jsonUser = json_decode(file_get_contents("php://input"));
 
 	echo json_encode(array(
-		"estado" => $inicio
+		"estado" => true
 	));
 
 	/*$nombre= $jsonUser->nombre;
@@ -34,4 +34,4 @@
 		];
 	}*/
 
-	echo json_encode($mensaje);
+	//echo json_encode($mensaje);
