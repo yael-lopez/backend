@@ -7,17 +7,18 @@
 
 	$jsonUser = json_decode(file_get_contents("php://input"));
 
-	echo json_encode(array(
-		"estado" => true
-	));
 
-	/*$nombre= $jsonUser->nombre;
+	$nombre= $jsonUser->nombre;
 	$inicio= $jsonUser->inicio;
 	$fin= $jsonUser->fin;
 	$horas= $jsonUser->horas;
 	$costo = $jsonUser->costo;
 
-	require 'database.php';
+	$json = [
+		"nombre" => $nombre
+	];
+
+	/*require 'database.php';
 
 	$query = "insert into curso (nombre, fecha_inicio, fecha_fin, horas, costo) values('$nombre', '$inicio', '$fin', $horas, $costo)";
 
