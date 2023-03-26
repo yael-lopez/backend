@@ -7,15 +7,15 @@
 
 	$jsonUser = json_decode(file_get_contents("php://input"));
 
-	$nombre= $jsonUser->nombre;
+	echo json_encode(array(
+		"estado" => $inicio
+	));
+
+	/*$nombre= $jsonUser->nombre;
 	$inicio= $jsonUser->inicio;
 	$fin= $jsonUser->fin;
 	$horas= $jsonUser->horas;
 	$costo = $jsonUser->costo;
-
-	/*echo json_encode(array(
-		"estado" => $inicio
-	));*/
 
 	require 'database.php';
 
@@ -32,6 +32,6 @@
 			"estado" => false,
 			"mensaje" => "Error al Crear Curso"
 		];
-	}
+	}*/
 
 	echo json_encode($mensaje);
