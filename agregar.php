@@ -5,7 +5,8 @@
 	header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 	header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 
-	$jsonUser = json_decode(file_get_contents("php://input"));
+	$JSONData = file_get_contents("php://input");
+	$dataObject = json_decode($JSONData);
 
 
 	/*$nombre= $jsonUser->nombre;
@@ -14,11 +15,7 @@
 	$horas= $jsonUser->horas;
 	$costo = $jsonUser->costo;*/
 
-	echo $jsonUser;
-
-	$mensaje = [
-		"nombre" => json_decode(file_get_contents("php://input"))
-	];
+	var_dum( $dataObject );
 
 	/*require 'database.php';
 
@@ -37,4 +34,4 @@
 		];
 	}*/
 
-	echo json_encode($mensaje);
+	//echo json_encode($mensaje);
