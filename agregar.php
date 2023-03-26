@@ -9,15 +9,13 @@
 	$dataObject = json_decode($JSONData);
 
 
-	/*$nombre= $jsonUser->nombre;
-	$inicio= $jsonUser->inicio;
-	$fin= $jsonUser->fin;
-	$horas= $jsonUser->horas;
-	$costo = $jsonUser->costo;*/
+	$nombre= $dataObject->nombre;
+	$inicio= $dataObject->inicio;
+	$fin= $dataObject->fin;
+	$horas= $dataObject->horas;
+	$costo = $dataObject->costo;
 
-	var_dump( $dataObject );
-
-	/*require 'database.php';
+	require 'database.php';
 
 	$query = "insert into curso (nombre, fecha_inicio, fecha_fin, horas, costo) values('$nombre', '$inicio', '$fin', $horas, $costo)";
 
@@ -32,6 +30,6 @@
 			"estado" => false,
 			"mensaje" => "Error al Crear Curso"
 		];
-	}*/
+	}
 
-	//echo json_encode($mensaje);
+	echo json_encode($mensaje);
