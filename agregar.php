@@ -14,7 +14,9 @@
 	$horas= $jsonUser->horas;
 	$costo = $jsonUser->costo;*/
 
-	$json = [
+	echo $jsonUser;
+
+	$mensaje = [
 		"nombre" => json_decode(file_get_contents("php://input"))
 	];
 
