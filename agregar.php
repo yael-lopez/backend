@@ -15,7 +15,7 @@
 	$horas= $jsonUser->horas;
 	$costo = $jsonUser->costo;*/
 
-	var_dum( $dataObject );
+	var_dump( $dataObject );
 
 	/*require 'database.php';
 
