@@ -35,4 +35,4 @@
 		];
 	}*/
 
-	//echo json_encode($mensaje);
+	echo json_encode($mensaje);
